@@ -28,11 +28,12 @@ Este proyecto consiste en el desarrollo de un sitio WEB utilizando HTML, CSS y J
 ## 🚀 Tecnologías utilizadas
 
 - HTML5
-- CSS3
+- CSS
 - JS (proximamente)
 - Git & GitHub
 - GitHub Pages
 - GitHub Desktop
+- Microsoft Copilot (para el readme)
 
 ---
 
