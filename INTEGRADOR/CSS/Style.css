@@ -21,38 +21,15 @@ body {
   font-weight: bold;
 }
 
-.menu {
-  background-color: #333;
-}
-
-.menu ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-}
-
-.menu li {
-  margin: 0 15px;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  display: block;
-}
-
-.menu a:hover {
-  background-color: #555;
-  border-radius: 5px;
-}
-
-.top-bar {
-  background-color: black;
-  color: yellow;
-  padding: 10px;
-  text-align: center;
-  font-weight: bold;
+.logoFijo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 120px;
+  height: auto;
+  opacity: 0.5;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .menu {
@@ -203,13 +180,3 @@ footer a:hover {
   text-align: center;
 }
 
-.logoFijo {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 120px;
-  height: auto;
-  opacity: 0.5;
-  z-index: 0;
-  pointer-events: none;
-}

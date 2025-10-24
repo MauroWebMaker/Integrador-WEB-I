@@ -1,4 +1,4 @@
-
+/*
 const imagenes = [
   "INTEGRADOR/Imagenes/cuchillo1.jpg",
   "INTEGRADOR/Imagenes/cuchillo2.jpg",
@@ -93,3 +93,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+*/
