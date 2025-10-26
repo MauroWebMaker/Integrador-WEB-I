@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,57 +11,70 @@
 
 <body>
   <img src="img/kasike.jpg" alt="KasikeLogo" class="logoFijo">
-     <header>
+  <header>
     <div class="barrasuperior">Realizado por Daiana y Mauricio</div>
     <nav class="menu">
       <ul>
         <li><a href="../../../index.html">Inicio</a></li>
-        <li><a href="#" target="_blank">Productos</a></li>
+        <li><a href="../Productos/productos.html" target="_self">Productos</a></li>
         <li><a href="../Contacto/contacto.html" target="_self">Contacto</a></li>
       </ul>
     </nav>
   </header>
   <main>
-  <div class="main-grid">
-    
-    <section class="main-redes">
-      <h4>Redes Sociales</h4>
-      <ul>
-        <li><a href="https://www.instagram.com/kasikecuchillos/?utm_source=ig_web_button_share_sheet" target="_blank">Instagram Kasike Cuchillos</a></li>
-        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1" target="_blank">Instagram Daiana</a></li>
-        <li><a href="https://www.instagram.com/mauricioreta131/" target="_blank">Instagram Mauricio</a></li>
-      </ul>
-    </section>
+    <div class="main-grid">
 
-    <section class="main-form">
-      <h4>INGRESE SUS DATOS</h4>
-      <p>Pronto nos comunicaremos con ustedes para coordinar su Cuchillo Personalizado</p>
-      
-          
-          <form id="form-contacto" novalidate>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+      <section class="main-redes">
+        <h4>Redes Sociales</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/kasikecuchillos/?utm_source=ig_web_button_share_sheet"
+              target="_blank">Instagram Kasike Cuchillos</a></li>
+          <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1"
+              target="_blank">Instagram Daiana</a></li>
+          <li><a href="https://www.instagram.com/mauricioreta131/" target="_blank">Instagram Mauricio</a></li>
+        </ul>
+      </section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+      <section class="main-form">
+        <h4>INGRESE SUS DATOS</h4>
+        <p>Pronto nos comunicaremos con ustedes para coordinar su Cuchillo Personalizado</p>
 
-            <label for="telefono">Teléfono:</label>
-            <input type="text" id="telefono" name="telefono">
 
-            <button type="submit">Enviar</button>
-          </form>
-           <div id="resultado"></div>
-          
-    </section>
-    <section class="main-horario">
-      <h4>Horario de atención</h4>
-      <p>Lunes a viernes de 8:00am a 6:00pm</p>
-      <p>Sábados de 8:00am a 12:00pm</p>
-      <h4>WhatsApp</h4>
-      <p>Próximamente...</p>
-    </section>
+        <form id="form-contacto" novalidate>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
 
-  </div>
-</main>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+
+          <label for="telefono">Teléfono:</label>
+          <input type="text" id="telefono" name="telefono">
+
+          <label for="cuchillo-interes">¿Qué cuchillo te interesó?</label>
+          <select id="cuchillo-interes" name="cuchillo-interes">
+            <option value="">Seleccioná uno</option>
+            <option value="cuchillo1">Cuchillo 1</option>
+            <option value="cuchillo2">Cuchillo 2</option>
+            <option value="cuchillo3">Cuchillo 3</option>
+            <option value="cuchillo4">Cuchillo 4</option>
+            <option value="cuchillo5">Cuchillo 5</option>
+          </select>
+
+          <button type="submit">Enviar</button>
+        </form>
+        <div id="resultado"></div>
+
+      </section>
+      <section class="main-horario">
+        <h4>Horario de atención</h4>
+        <p>Lunes a viernes de 8:00am a 6:00pm</p>
+        <p>Sábados de 8:00am a 12:00pm</p>
+        <h4>WhatsApp</h4>
+        <p>Próximamente...</p>
+      </section>
+
+    </div>
+  </main>
 </body>
+
 </html>
