@@ -28,8 +28,51 @@ setInterval(() => {
   indice = (indice + 1) % imagenes.length;
   mostrarImagen();
 }, 5000);
-})
 
+//Validaciones
+
+function validarForm() {
+  let nombre = document.forms["formContacto"]["nombre"].value;
+  let email = document.forms["formContacto"]["email"].value;
+  let telefono = document.forms["formContacto"]["telefono"].value;
+  let mensaje = document.forms["formContacto"]["mensaje"].value;
+
+if (nombre === "") {
+    alert("Por favor, complete su nombre.");
+    return false;
+  }
+
+  if (email === "") {
+    alert("Por favor, ingrese su correo electrónico.");
+    return false;
+  }
+
+  
+  let regexEmail = /^[\w.-]+@[\w.-]+\.\w{2,4}$/;
+  if (!regexEmail.test(email)) {
+    alert("El correo electrónico no es válido.");
+    return false;
+  }
+
+  if (telefono === "") {
+    alert("Por favor, ingrese su número de teléfono.");
+    return false;
+  }
+
+  let regexTel = /^[0-9]{8,15}$/;
+  if (!regexTel.test(telefono)) {
+    alert("El teléfono debe tener entre 8 y 15 números.");
+    return false;
+  }
+
+  if (mensaje === "") {
+    alert("Por favor, escriba un mensaje.");
+    return false;
+  }
+
+  alert("Formulario enviado correctamente ");
+  return true; 
+}})
 
 
  /* const form = document.getElementById("form-contacto");
