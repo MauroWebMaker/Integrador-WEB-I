@@ -29,7 +29,7 @@ setInterval(() => {
   mostrarImagen();
 }, 5000);
 
-//Validaciones
+//supongo que esto iría en contacto.js pero la verdad no vi nada de dom y bom
 
 function validarForm() {
   let nombre = document.forms["formContacto"]["nombre"].value;
