@@ -1,49 +1,38 @@
-/*
-const imagenes = [
-  "INTEGRADOR/Imagenes/cuchillo1.jpg",
-  "INTEGRADOR/Imagenes/cuchillo2.jpg",
-  "INTEGRADOR/Imagenes/cuchillo3.jpg",
-  "INTEGRADOR/Imagenes/cuchillo4.jpg"
-];
 
-// Variables para el control del carrusel
+document.addEventListener("DOMContentLoaded", () => {
+const contenedor = document.querySelector('.carrusel-imagenes');
+const imagenes = document.querySelectorAll('.carrusel-imagenes img');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+
+
 let indice = 0;
-const img = document.getElementById("imagen-carrusel");
-const btnAnt = document.getElementById("anterior");
-const btnSig = document.getElementById("siguiente");
 
-// --- Función para mostrar la imagen actual ---
+
 function mostrarImagen() {
-  img.src = imagenes[indice];
+  contenedor.style.transform = `translateX(${-indice * 100}%)`;
 }
 
-// --- Botón siguiente ---
-btnSig.addEventListener("click", () => {
-  indice = (indice + 1) % imagenes.length; // pasa al siguiente, vuelve al primero si llega al final
+next.addEventListener('click', () => {
+  indice = (indice + 1) % imagenes.length;
   mostrarImagen();
 });
 
-// --- Botón anterior ---
-btnAnt.addEventListener("click", () => {
-  indice = (indice - 1 + imagenes.length) % imagenes.length; // vuelve al último si está en el primero
+prev.addEventListener('click', () => {
+  indice = (indice - 1 + imagenes.length) % imagenes.length;
   mostrarImagen();
 });
 
-// --- Rotación automática del carrusel cada 3 segundos ---
+
 setInterval(() => {
   indice = (indice + 1) % imagenes.length;
   mostrarImagen();
-}, 3000);
-
-// FIN DEL CARRUSEL 
-
+}, 5000);
+})
 
 
-// VALIDACIÓN DEL FORMULARIO DE CONTACTO
 
-
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("form-contacto");
+ /* const form = document.getElementById("form-contacto");
 
   if (form) {
     form.addEventListener("submit", (e) => {
@@ -53,22 +42,18 @@ document.addEventListener("DOMContentLoaded", () => {
       const email = document.getElementById("email").value.trim();
       const telefono = document.getElementById("telefono").value.trim();
       const mensaje = document.getElementById("mensaje").value.trim();
-
       const resultado = document.getElementById("resultado");
       resultado.innerHTML = "";
 
-      // --- Expresiones regulares ---
-      const regexEmail = /^[\w.-]+@[\w.-]+\.\w{2,4}$/;
-      const regexTel = /^[0-9]{8,15}$/;
 
       const errores = [];
 
-      // --- Validaciones ---
+     // Validaciones
       if (nombre === "") errores.push("El nombre es obligatorio.");
       if (!regexEmail.test(email)) errores.push("El correo electrónico no es válido.");
       if (!regexTel.test(telefono)) errores.push("El teléfono debe tener entre 8 y 15 dígitos.");
 
-      // --- Mostrar errores o exito ---
+     
       if (errores.length > 0) {
         errores.forEach(err => {
           const p = document.createElement("p");
@@ -92,5 +77,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-});
-*/
+}) */
