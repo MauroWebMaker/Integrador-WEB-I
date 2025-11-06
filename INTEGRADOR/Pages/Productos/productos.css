@@ -53,9 +53,11 @@ body {
     display: block;
 }
 
-.menu a:hover {
-    background-color: #555;
-    border-radius: 5px;
+.menu ul li a:hover  {
+  
+  color: #d4af37 !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
 }
 
 .contenedor-cuchillos {
@@ -89,10 +91,15 @@ body {
 }
 
 
-.tarjeta-cuchillo h3 {
+.tarjeta-cuchillo h3 a {
     font-size: 1.2rem;
     margin: 0.5rem 0;
-    color: #333;
+    color:#333
+}
+
+.tarjeta-cuchillo h3 a:hover {
+  color: #d4af37; 
+  text-shadow: 0px 0px 10px rgba(212, 175, 55, 0.8);
 }
 
 .tarjeta-cuchillo p {
@@ -126,6 +133,7 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+    color:#eee
 }
 
 .mapa {
