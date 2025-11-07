@@ -5,7 +5,9 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
   background-image: url("img/kasike.jpg");
   background-repeat: repeat;
   background-size: 480px;
